@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도움 요청</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #eeeff1;
+        }
+
+        a {
+            text-decoration: none;
+            color: #9c9c9c;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #fdfdfd;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 8px 200px;
+            height: 100px;
+            justify-content: center;
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+        }
+
+        .navbar_menu i {
+            color: #405357;
+        }
+
+        .navbar_menu {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .navbar_menu li {
+            padding: 8px 12px;
+            margin: 50px;
+            font-size: 15px;
+        }
+
+        .login {
+            position: absolute;
+            right: 32px;
+        }
+
+        td {
+            text-align: left !important;
+            background-color: white;
+        }
+        #wrap {
+            width: 1000px;
+	        margin:auto;
+        }
+        table{
+            width: 90%;
+            border-collapse: collapse;
+            line-height: 20px;
+        }
+        table td,th {
+            border-top:1px solid black;
+            border-bottom:1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #78a1a8;
+            width: 100%;
+            height: 150px;
+            bottom: 0;
+        }
+        .foo_img {
+            width: 280px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar_menu">
+          <li>
+            <a href=""> <i class="fa-solid fa-house-chimney"></i>메인</a>
+          </li>
+          <li><a href="">정보제공</a></li>
+          <li><a href="">벼룩시장</a></li>
+          <li><a href="">구인</a></li>
+          <li><a href="">구직</a></li>
+          <li class="login">
+            <a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i> 로그인</a>
+          </li>
+        </ul>
+      </nav>
+    <div id="wrap">
+        <h2>도움 요청</h2>
+            <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                    <th><i class="fa-solid fa-screwdriver-wrench"></i> 고장 문의</th>
+                    <td>ABC Repair Center / 010-4383-3839</td>
+                </tr>
+                <tr>
+                    <th><i class="fa-solid fa-house-chimney-medical"></i> 병원 문의</th>
+                    <td>AST Hospital / 010-4583-2212</td>
+                </tr>
+                <tr>
+                    <th><i class="fa-solid fa-circle-question"></i> 기타 문의</th>
+                    <td>OO Community Center / 010-4099-2880</td>
+                </tr>
+            </table>
+            <br><br>
+            <input class="btn" type="button" value="목록으로" onclick="location.href='information.html'">
+    </div>
+    <footer>
+        <div class="foo_img">
+            <img src="../img_source/logo.jpg" class="foo_img">
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/cf416b0d1e.js" crossorigin="anonymous"></script>
+</body>
+</html>

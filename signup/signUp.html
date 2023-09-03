@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <script src="https://kit.fontawesome.com/0e57f66e50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="signUpStyle.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar_menu">
+        <li>
+          <a href="../main/Main.html"> <i class="fa-solid fa-house-chimney"></i>메인</a>
+        </li>
+        <li><a href="../information/information.html">정보제공</a></li>
+        <li><a href="../market/Market_main.html">벼룩시장</a></li>
+        <li><a href="../job/PeopleSearching.html">구인</a></li>
+        <li><a href="../job/jobSearching.html">구직</a></li>
+        <li class="login">
+          <a href="../logIn/login.html"
+            ><i class="fa-solid fa-arrow-right-to-bracket"></i> 로그인</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div id="container">
+      <div class="signUP_form">
+        <h1 class="welcome">환영합니다</h1>
+        <div class="login_information">
+          <h2>로그인 정보</h2>
+          <div class="form">
+            <span>아이디</span>
+            <input type="text" name="" id="id_input" />
+            <button id="btn_idOk">중복확인</button>
+          </div>
+          <div class="form">
+            <span>비밀번호</span>
+            <input type="text" name="" id="password_input" />
+          </div>
+          <div class="form">
+            <span>비밀번호 확인</span>
+            <input type="text" name="" id="passwordOk_input" />
+          </div>
+        </div>
+        <div class="customer_information">
+          <h2>회원정보</h2>
+
+          <div class="form">
+            <span>이름</span>
+            <input type="text" name="" id="name_input" />
+          </div>
+          <div class="form">
+            <span>이메일</span>
+            <input type="text" name="" id="email_input" />
+          </div>
+          <div class="form">
+            <span>생년월일</span>
+            <input type="text" name="" id="birth_input" placeholder="주민번호 앞 6자리" />
+          </div>
+          <div class="btn">
+            <button id="btn_enter">가입하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="greeting" class="hidden"></div>
+    <button id="main_btn" class="hidden" onclick="location.href='../logIn/login.html'">
+      로그인하기
+    </button>
+    <footer>
+      <div class="foo_img">
+        <img src="../img_source/logo.jpg" class="foo_img" />
+      </div>
+    </footer>
+    <script src="signUp.js"></script>
+  </body>
+</html>

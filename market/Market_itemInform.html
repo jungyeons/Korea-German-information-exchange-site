@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../market/header.css" />
+    <link rel="stylesheet" href="../market/footer.css" />
+    <title>itemInform</title>
+    <script src="https://kit.fontawesome.com/0e57f66e50.js" crossorigin="anonymous"></script>
+    <style>
+      .container {
+        margin: 5px 50px;
+      }
+      #preview {
+        width: 370px;
+        height: 280px;
+        background-color: #9a9a9a;
+      }
+      #button {
+        margin: 30px 0px 50px 230px;
+        background-color: #78a1a8;
+        border: none;
+        width: 200px;
+        height: 50px;
+      }
+      .item_inform {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar_menu">
+        <li>
+          <a href="../main/Main.html"> <i class="fa-solid fa-house-chimney"></i>메인</a>
+        </li>
+        <li><a href="../information/information.html">정보제공</a></li>
+        <li><a href="../market/Market_main.html">벼룩시장</a></li>
+        <li><a href="../job/PeopleSearching.html">구인</a></li>
+        <li><a href="../job/jobSearching.html">구직</a></li>
+        <li class="login">
+          <a href="../login/login.html"
+            ><i class="fa-solid fa-arrow-right-to-bracket"></i> 로그인</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>기본정보</h1>
+      <hr style="background-color: #78a1a8; height: 5px" />
+      <div class="image_reg">
+        <p style="font-size: 20px">상품 이미지</p>
+        <p>&nbsp;사진을 등록해주세요.</p>
+        <img id="preview" />
+        <input type="file" onchange="readURL(this);" />
+        <script>
+          function readURL(input) {
+            if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function (e) {
+                document.getElementById("preview").src = e.target.result;
+              };
+              reader.readAsDataURL(input.files[0]);
+            } else {
+              document.getElementById("preview").src = "";
+            }
+          }
+        </script>
+      </div>
+      <hr style="margin-top: 50px" />
+      <div class="section">
+        <p style="font-size: 20px">상품 정보 등록</p>
+        <div class="item_inform">
+          <p>
+            가격 :
+            <input
+              type="text"
+              id="text"
+              value="가격을 입력해 주세요."
+              onclick="{document.getElementById('text').value=' ';}"
+            />
+          </p>
+          <p>상품 정보 :</p>
+          <textarea
+            cols="100px;"
+            rows="10px;"
+            id="textarea"
+            onclick="{document.getElementById('textarea').value=' ';}"
+          >
+상품 정보를 입력해주세요.</textarea
+          >
+          <br /><input type="button" value="올리기" id="button" onclick="javascript:btn()" />
+          <script>
+            function btn() {
+              alert("상품 업로드가 완료되었습니다.\n벼룩시장 메인 화면으로 돌아갑니다.");
+              location.href = "../market/Market_main.html";
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="foo_img">
+        <img src="../market/logo.jpg" class="foo_img" />
+      </div>
+    </footer>
+  </body>
+</html>

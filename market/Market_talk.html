@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../market/header.css" />
+    <link rel="stylesheet" href="../market/footer.css" />
+    <title>talk</title>
+    <script src="https://kit.fontawesome.com/0e57f66e50.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    .container {
+      background-color: #78a1a8;
+      margin: 0 auto;
+      width: 800px;
+      height: 100%;
+      border: 1px solid gray;
+      margin-top: 100px;
+      margin-bottom: 300px;
+    }
+    header {
+      text-align: center;
+      width: 800px;
+      margin: 0 auto;
+      border: none;
+      background-color: #78a1a8;
+    }
+    .textbox {
+      background-color: white;
+    }
+    textarea {
+      resize: none;
+      margin: 30px;
+      border: none;
+    }
+    .bottonbox {
+      margin: 0 auto;
+    }
+    #button {
+      width: 100px;
+      height: 50px;
+      margin: 30px 30px 30px 350px;
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar_menu">
+        <li>
+          <a href="../main/Main.html"> <i class="fa-solid fa-house-chimney"></i>메인</a>
+        </li>
+        <li><a href="../information/information.html">정보제공</a></li>
+        <li><a href="../market/Market_main.html">벼룩시장</a></li>
+        <li><a href="../job/PeopleSearching.html">구인</a></li>
+        <li><a href="../job/jobSearching.html">구직</a></li>
+        <li class="login">
+          <a href="../login/login.html"
+            ><i class="fa-solid fa-arrow-right-to-bracket"></i> 로그인</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <header>
+        <p>판매자에게 쪽지</p>
+      </header>
+      <div class="textbox">
+        <textarea
+          cols="107.5px;"
+          rows="10px;"
+          id="textarea"
+          onclick="{document.getElementById('textarea').value=' ';}"
+        >
+보내실 말을 입력해주세요.</textarea
+        >
+      </div>
+      <div class="buttonbox">
+        <input type="button" value="보내기" id="button" onclick="javascript:btn()" />
+      </div>
+      <script>
+        function btn() {
+          alert("판매자에게 쪽지를 보냈습니다.\n벼룩시장 메인 화면으로 돌아갑니다.");
+          location.href = "../market/Market_main.html";
+        }
+      </script>
+    </div>
+    <footer>
+      <div class="foo_img">
+        <img src="../market/logo.jpg" class="foo_img" />
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../market/header.css" />
+    <link rel="stylesheet" href="../market/footer.css" />
+    <title>item</title>
+    <script src="https://kit.fontawesome.com/0e57f66e50.js" crossorigin="anonymous"></script>
+    <style>
+      .container {
+        margin: 150px 100px 300px 100px;
+      }
+      .left {
+        float: left;
+        margin-right: 40px;
+      }
+      .inform {
+        margin-top: 30px;
+      }
+      #button {
+        text-align: center;
+        font-size: large;
+        background-color: #78a1a8;
+        border: none;
+        width: 200px;
+        height: 50px;
+        margin-top: 135px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar_menu">
+        <li>
+          <a href="../main/Main.html"> <i class="fa-solid fa-house-chimney"></i>메인</a>
+        </li>
+        <li><a href="../information/information.html">정보제공</a></li>
+        <li><a href="../market/Market_main.html">벼룩시장</a></li>
+        <li><a href="../job/PeopleSearching.html">구인</a></li>
+        <li><a href="../job/jobSearching.html">구직</a></li>
+        <li class="login">
+          <a href="../login/login.html"
+            ><i class="fa-solid fa-arrow-right-to-bracket"></i> 로그인</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="left">
+        <img
+          src="https://static.wixstatic.com/media/84770f_2ff29ff6663a4d619983458cb0899264.png/v1/fill/w_500,h_500,al_c,q_90,usm_0.66_1.00_0.01/84770f_2ff29ff6663a4d619983458cb0899264.webp"
+        />
+      </div>
+      <div class="right">
+        <h1>완전 비싼 조명</h1>
+        <p style="font-size: 25px">€ 152.79</p>
+        <hr />
+        <div class="inform">
+          <p style="font-size: 20px">상품 정보</p>
+          <p>
+            이 부분은 판매자가 입력한 상품의 세부 사항을 적는 곳 입니다.<br />
+            이 조명은 진짜 예쁘고 밝게 빛납니다. 아무나 물건을 살 수 없는 유명 브랜드 h에서 나왔는데
+            구매한 지 몇 년이 지나서 싼 가격에 올립니다. 하루가 끝난 후 침대 옆에 놓여있는 이 조명을
+            켠 뒤 커피 한잔의 여유와 함께 독서를 즐겨보세요.
+          </p>
+        </div>
+        <input type="button" value="쪽지 보내기" id="button" onclick="talk()" />
+        <script>
+          function talk() {
+            window.location.href = "../market/Market_talk.html";
+          }
+        </script>
+      </div>
+    </div>
+    <footer>
+      <div class="foo_img">
+        <img src="../market/logo.jpg" class="foo_img" />
+      </div>
+    </footer>
+  </body>
+</html>

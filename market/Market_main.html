@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../market/header.css" />
+    <link rel="stylesheet" href="../market/footer.css" />
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <title>main</title>
+    <script src="https://kit.fontawesome.com/0e57f66e50.js" crossorigin="anonymous"></script>
+    <style>
+      .grid {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+      .grid-sizer,
+      .grid-item {
+        width: 23%;
+      }
+      .grid-item {
+        border: none;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+      .grid-item img {
+        display: block;
+        min-width: 100%;
+        max-width: 100%;
+      }
+      .logo {
+        margin-top: 50px;
+        margin-left: 130px;
+      }
+      .buttonBox {
+        float: right;
+        margin-right: 130px;
+      }
+      #button {
+        width: 180px;
+        height: 50px;
+        border: none;
+        background-color: #78a1a8;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar_menu">
+        <li>
+          <a href="../main/Main.html"> <i class="fa-solid fa-house-chimney"></i>메인</a>
+        </li>
+        <li><a href="../information/information.html">정보제공</a></li>
+        <li><a href="../market/Market_main.html">벼룩시장</a></li>
+        <li><a href="../job/PeopleSearching.html">구인</a></li>
+        <li><a href="../job/jobSearching.html">구직</a></li>
+        <li class="login">
+          <a href="../login/login.html"
+            ><i class="fa-solid fa-arrow-right-to-bracket"></i> 로그인</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <h1>벼룩시장</h1>
+    </div>
+    <div class="buttonBox">
+      <input type="button" value="내 상품 판매하기" id="button" onclick="itemInform()" />
+    </div>
+    <script>
+      function itemInform() {
+        window.location.href = "../market/Market_itemInform.html";
+      }
+    </script>
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="grid-item" onclick="item()"><img src="http://placekitten.com/200/300" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/200/123" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/200/400" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/200/150" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/220/423" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/300/210" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/230/230" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/150/133" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/200/109" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/210/120" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/803/319" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/310/160" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/310/200" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/360/160" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/670/236" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/337/453" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/390/190" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/500/190" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/699/190" /></div>
+      <div class="grid-item" onclick="item()"><img src="https://placekitten.com/452/260" /></div>
+    </div>
+    <script>
+      var msnry = new Masonry(".grid", {
+        itemSelector: ".grid-item",
+        columnWidth: ".grid-sizer",
+        percentPosition: true,
+        gutter: 20,
+      });
+      imagesLoaded(".grid").on("progress", function () {
+        msnry.layout();
+      });
+      function item() {
+        window.location.href = "../market/Market_item.html";
+      }
+    </script>
+    <footer>
+      <div class="foo_img">
+        <img src="../market/logo.jpg" class="foo_img" />
+      </div>
+    </footer>
+  </body>
+</html>

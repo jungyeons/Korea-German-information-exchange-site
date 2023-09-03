@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보제공</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #eeeff1;
+        }
+
+        a {
+            text-decoration: none;
+            color: #9c9c9c;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #fdfdfd;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 8px 200px;
+            height: 100px;
+            justify-content: center;
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+        }
+
+        .navbar_menu i {
+            color: #405357;
+        }
+
+        .navbar_menu {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .navbar_menu li {
+            padding: 8px 12px;
+            margin: 50px;
+            font-size: 15px;
+        }
+
+        .login {
+            position: absolute;
+            right: 32px;
+        }
+        
+        #wrap {
+            width: 1000px;
+	        margin:auto;
+        }
+        table{
+            width: 90%;
+            border-collapse: collapse;
+            line-height: 20px;
+        }
+        table td,th {
+            border-top:1px solid black;
+            border-bottom:1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .main_tr {
+            background-color: white;
+        }
+
+        .sub_tr {
+            background-color: #78a1a8;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #78a1a8;
+            width: 100%;
+            height: 150px;
+            bottom: 0;
+        }
+        .foo_img {
+            width: 280px;
+            height: 150px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/0e57f66e50.js" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar_menu">
+            <li>
+                <a href="../main/Main.html"><i class="fa-solid fa-house-chimney"></i>메인</a>
+              </li>
+              <li><a href="../information/information.html">정보제공</a></li>
+              <li><a href="../market/Market_Main.html">벼룩시장</a></li>
+              <li><a href="../job/PeopleSearching.html">구인</a></li>
+              <li><a href="../job/jobSearching.html">구직</a></li>
+              <li class="login">
+                <a href="../signup/signup.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> 로그인</a>
+              </li>
+        </ul>
+      </nav>
+    <div id="wrap">
+    	<table style="margin-left: auto; margin-right: auto;">
+            <br><br><br>
+            <tr class="sub_tr">
+                <th colspan="5">Talk Lounge (자유게시판)</th>
+            </tr>
+    		<tr>
+    			<td colspan="5" style="border:white;text-align:right;"><a href="board_write.html">| 글 작성하기 |</a></td>
+    		</tr>
+    		<tr class="main_tr">
+    			<th>글번호</th>
+    			<th>글제목</th>
+    			<th>작성자</th>
+    			<th>작성날짜</th>
+    			<th>조회수</th>
+    		</tr>
+            <tr class="main_tr">
+                <th>1</th>
+                <th><a href="view_covid.html">코로나 걸렸는데 너무 아파요</a></th>
+                <th>김민수</th>
+                <th>2022.05.31.</th>
+                <th>50</th>
+            </tr>
+            <tr class="main_tr">
+                <th>2</th>
+                <th><a href="view_pizza.html">OO에 있는 피자 너무 맛있어요</a></th>
+                <th>배한준</th>
+                <th>2022.05.31.</th>
+                <th>31</th>
+            </tr>
+            <tr class="main_tr">
+                <th>3</th>
+                <th><a href="view_rain.html">오늘 비 오네요 ㅠㅠ</a></th>
+                <th>이지안</th>
+                <th>2022.05.31.</th>
+                <th>24</th>
+            </tr>
+            <tr class="main_tr">
+                <th>4</th>
+                <th><a href="view_dog.html">우리 집 강아지 너무 귀여워요</a></th>
+                <th>서우진</th>
+                <th>2022.05.31.</th>
+                <th>17</th>
+            </tr>
+            <tr class="main_tr">
+                <th>5</th>
+                <th><a href="view_clean.html">청소도구 구해요</a></th>
+                <th>이연우</th>
+                <th>2022.05.31.</th>
+                <th>69</th>
+            </tr>
+    	</table>
+    </div>
+    <div id="wrap">
+        <br><br><br>
+    	<table style="margin-left: auto; margin-right: auto;">
+            <tr class="sub_tr">
+                <th colspan="5">생활 Q&A</th>
+            </tr>
+    		<tr>
+    			<td colspan="5" style="border:white;text-align:right;"><a href="board_write.html">| 글 작성하기 |</a></td>
+    		</tr>
+    		<tr class="main_tr">
+    			<th>글번호</th>
+    			<th>글제목</th>
+    			<th>작성자</th>
+    			<th>작성날짜</th>
+    			<th>조회수</th>
+    		</tr>
+            <tr class="main_tr">
+                <th>1</th>
+                <th><a href="view_school.html">아이들 학교는 어디로 보내시나요?</a></th>
+                <th>박다현</th>
+                <th>2022.05.31.</th>
+                <th>34</th>
+            </tr>
+            <tr class="main_tr">
+                <th>2</th>
+                <th><a href="view_card.html">신용카드 어떤 거 쓰세요?</a></th>
+                <th>김아린</th>
+                <th>2022.05.31.</th>
+                <th>12</th>
+            </tr>
+            <tr class="main_tr">
+                <th>3</th>
+                <th><a href="view_clothes.html">옷 가게 어디가 괜찮나요?</a></th>
+                <th>신지우</th>
+                <th>2022.05.31.</th>
+                <th>61</th>
+            </tr>
+            <tr class="main_tr">
+                <th>4</th>
+                <th><a href="view_place.html">주말에 가볼만한 곳 있나요?</a></th>
+                <th>박서준</th>
+                <th>2022.05.31.</th>
+                <th>13</th>
+            </tr>
+            <tr class="main_tr">
+                <th>5</th>
+                <th><a href="view_cafe.html">OO근처에 카페 있나요?</a></th>
+                <th>이도윤</th>
+                <th>2022.05.31.</th>
+                <th>19</th>
+            </tr>
+    	</table>
+    </div>
+    <div id="wrap">
+    	<table style="margin-left: auto; margin-right: auto;">
+            <br><br><br>
+    		<tr class="sub_tr">
+    			<th>도움 요청</th>
+    		</tr>
+            <tr class="main_tr">
+                <th colspan="5" style="text-align:center;"><a href="help.html">고장 문의 / 병원 문의 / 기타 문의</a></th>
+            </tr>
+    	</table>
+    </div>
+    <div id="wrap">
+    	<table style="margin-left: auto; margin-right: auto;">
+            <br><br><br>
+    		<tr class="sub_tr">
+    			<th>생생정보통</th>
+    		</tr>
+            <tr class="main_tr">
+                <th colspan="5" style="text-align:center;"><a href="resturant.html">한인 식당</a></th>
+            </tr>
+    	</table>
+    </div>
+    <br><br><br>
+    <footer>
+        <div class="foo_img">
+            <img src="../img_source/logo.jpg" class="foo_img">
+        </div>
+    </footer>
+</body>
+</html>
